@@ -115,7 +115,7 @@ nav a.active {
 }
 
 .hero-content {
-    width: min(800px, 90%);
+    width: min(700px, 90%);
     margin: 0 auto;
     color: white;
 }
