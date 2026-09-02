@@ -1,0 +1,556 @@
+/* =========================================
+   COASTERS YOUTH BASEBALL
+   Navy + Orange Theme
+   ========================================= */
+
+:root {
+    --navy: #071b33;
+    --navy-light: #0d2b4d;
+    --orange: #f47b20;
+    --orange-dark: #d96512;
+    --white: #ffffff;
+    --light: #f4f6f8;
+    --gray: #66717d;
+    --dark: #17202a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background: var(--navy);
+    color: white;
+    border-bottom: 4px solid var(--orange);
+}
+
+.nav-container {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-main {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo-sub {
+    color: var(--orange);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 15px;
+    transition: 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--orange);
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 650px;
+    background:
+        linear-gradient(
+            rgba(7, 27, 51, 0.5),
+            rgba(7, 27, 51, 0.5)
+        ),
+        url("file:///C:/Users/chris/OneDrive/Desktop/Coaster%20Website/image11.jpeg")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    color: white;
+}
+
+.eyebrow {
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 90px);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+
+.hero h1 span,
+.page-hero h1 span {
+    color: var(--orange);
+}
+
+.hero-text {
+    max-width: 600px;
+    font-size: 19px;
+    margin: 30px 0;
+    color: #d9e0e7;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-orange {
+    background: var(--orange);
+    color: white;
+}
+
+.btn-orange:hover {
+    background: var(--orange-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-label {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.section-label.light {
+    color: var(--orange);
+}
+
+h2 {
+    color: var(--navy);
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.intro p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.text-link {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   VALUES
+   ========================================= */
+
+.values {
+    background: var(--navy);
+    padding: 90px 0;
+    color: white;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.value-card {
+    border-top: 3px solid var(--orange);
+    padding: 30px 20px 20px 0;
+}
+
+.value-card .number {
+    color: var(--orange);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #bdc9d5;
+}
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.cta {
+    text-align: center;
+    background: var(--light);
+}
+
+.cta p:not(.section-label) {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    color: var(--gray);
+}
+
+/* =========================================
+   PAGE HERO
+   ========================================= */
+
+.page-hero {
+    background: var(--navy);
+    padding: 100px 0;
+    color: white;
+}
+
+.page-hero h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    line-height: 1;
+    font-weight: 900;
+}
+
+/* =========================================
+   NARROW CONTENT
+   ========================================= */
+
+.narrow {
+    max-width: 900px;
+}
+
+.large-text {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--navy);
+    margin-bottom: 30px;
+}
+
+.narrow > p {
+    color: white;
+}
+
+/* =========================================
+   PHILOSOPHY
+   ========================================= */
+
+.philosophy-list {
+    margin-top: 60px;
+}
+
+.philosophy-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+}
+
+.philosophy-item > span {
+    color: var(--orange);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.philosophy-item h3 {
+    color: var(--navy);
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.philosophy-item p {
+    color: var(--gray);
+}
+
+/* =========================================
+   HISTORY TIMELINE
+   ========================================= */
+
+.timeline {
+    margin-top: 60px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 30px;
+    padding: 35px 0;
+    border-top: 1px solid #ddd;
+}
+
+.timeline-year {
+    color: var(--orange);
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.timeline-content h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: var(--gray);
+}
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+}
+
+.contact-grid > div > p:not(.section-label) {
+    color: var(--gray);
+}
+
+.contact-details {
+    margin-top: 40px;
+}
+
+.contact-details div {
+    margin-bottom: 25px;
+}
+
+.contact-details strong {
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.contact-details p {
+    color: var(--navy);
+    margin-top: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: var(--navy);
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccd2d8;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--orange);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    border: none;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #041222;
+    color: white;
+    padding: 35px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-content div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content strong {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.footer-content span {
+    color: var(--orange);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-content p {
+    color: #8996a3;
+    font-size: 13px;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .intro-grid,
+    .value-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .page-hero {
+        padding: 70px 0;
+    }
+
+    .timeline-item {
+        grid-template-columns: 80px 1fr;
+        gap: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
