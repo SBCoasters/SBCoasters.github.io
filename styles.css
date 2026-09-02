@@ -107,7 +107,7 @@ nav a.active {
             rgba(7, 27, 51, 0.5),
             rgba(7, 27, 51, 0.5)
         ),
-        url("SBCoasters.github.io/image11.jpeg")
+        url("https://raw.githubusercontent.com/SBCoasters/SBCoasters.github.io/refs/heads/main/image11.jpeg")
         center/cover;
 
     display: flex;
