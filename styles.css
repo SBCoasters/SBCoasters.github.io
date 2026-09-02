@@ -521,13 +521,15 @@ footer {
         padding: 8px;
     }
 
-    .hero {
-        min-height: 600px;
+    .hero-content {
+        width: 94%;
     }
 
     .hero h1 {
+        font-size: clamp(38px, 11vw, 60px);
         letter-spacing: -2px;
     }
+
 
     .intro-grid,
     .value-grid,
